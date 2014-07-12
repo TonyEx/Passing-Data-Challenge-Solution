@@ -21,6 +21,7 @@
 		C7E9C7D71971CA070058EDEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E9C7B91971CA070058EDEB /* UIKit.framework */; };
 		C7E9C7DF1971CA070058EDEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7E9C7DD1971CA070058EDEB /* InfoPlist.strings */; };
 		C7E9C7E11971CA070058EDEB /* Passing_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9C7E01971CA070058EDEB /* Passing_Data_Challenge_SolutionTests.m */; };
+		C7E9C7EC1971CAAE0058EDEB /* TEADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9C7EB1971CAAE0058EDEB /* TEADetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C7E9C7DC1971CA070058EDEB /* Passing Data Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Passing Data Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		C7E9C7DE1971CA070058EDEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7E9C7E01971CA070058EDEB /* Passing_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passing_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		C7E9C7EA1971CAAE0058EDEB /* TEADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEADetailViewController.h; sourceTree = "<group>"; };
+		C7E9C7EB1971CAAE0058EDEB /* TEADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEADetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				C7E9C7C71971CA070058EDEB /* Main.storyboard */,
 				C7E9C7CA1971CA070058EDEB /* TEAViewController.h */,
 				C7E9C7CB1971CA070058EDEB /* TEAViewController.m */,
+				C7E9C7EA1971CAAE0058EDEB /* TEADetailViewController.h */,
+				C7E9C7EB1971CAAE0058EDEB /* TEADetailViewController.m */,
 				C7E9C7CD1971CA070058EDEB /* Images.xcassets */,
 				C7E9C7BC1971CA070058EDEB /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E9C7EC1971CAAE0058EDEB /* TEADetailViewController.m in Sources */,
 				C7E9C7CC1971CA070058EDEB /* TEAViewController.m in Sources */,
 				C7E9C7C21971CA070058EDEB /* main.m in Sources */,
 				C7E9C7C61971CA070058EDEB /* TEAAppDelegate.m in Sources */,

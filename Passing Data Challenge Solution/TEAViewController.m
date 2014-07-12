@@ -7,6 +7,7 @@
 //
 
 #import "TEAViewController.h"
+#import "TEADetailViewController.h"
 
 @interface TEAViewController ()
 
@@ -26,4 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([sender isKindOfClass:[UIButton class]]) {
+		if ([segue.destinationViewController isKindOfClass:[TEADetailViewController class]]) {
+			TEADetailViewController *detailVC = segue.destinationViewController;
+			detailVC.informationFromTextField = self.textField.text;
+		}
+	}
+}
 @end
