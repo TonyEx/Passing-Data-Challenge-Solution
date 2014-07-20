@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TEADetailViewController.h"
 
-@interface TEAViewController : UIViewController
+@interface TEAViewController : UIViewController <DetailViewControllerDelegate, UITextFieldDelegate>
+
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "TEADetailViewController.h"
+#import "TEAViewController.h"
 
 @interface TEADetailViewController ()
 
@@ -29,6 +30,8 @@
     // Do any additional setup after loading the view.
 	
 	self.label.text = self.informationFromTextField;
+	
+	self.textField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,5 +50,24 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (IBAction)updatePressed:(UIButton *)sender {
+	if (self.delegate) {
+		if ([self.delegate isKindOfClass:[TEAViewController class]]) {
+			self.label.text = self.textField.text;
+			[self.delegate didUpdateText:self.textField.text];
+		}
+		
+	}
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	[self.textField resignFirstResponder];
+	
+	return YES;
+}
 
 @end

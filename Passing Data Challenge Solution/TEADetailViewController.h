@@ -8,9 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TEADetailViewController : UIViewController
+@protocol DetailViewControllerDelegate <NSObject>
+
+@required
+
+-(void)didUpdateText:(NSString *) text;
+
+@end
+
+
+@interface TEADetailViewController : UIViewController <UITextFieldDelegate>
+
 @property (strong, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) id <DetailViewControllerDelegate> delegate;
+
 
 @property(strong, nonatomic) NSString *informationFromTextField;
+
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+- (IBAction)updatePressed:(UIButton *)sender;
 
 @end
